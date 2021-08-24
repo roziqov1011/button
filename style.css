@@ -1,0 +1,42 @@
+body{
+    background-color: blueviolet;
+}
+.btn{
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    border: 1px solid #002255;
+    width: 190px;
+    height: 50px;
+    overflow: hidden;
+    background-color: rgb(38, 192, 97);
+}
+.btn:hover .btn-span{
+    transform: scaleX(1) rotate(45deg) translateX(-42px) translateY(-40px);
+    box-shadow: 0 0 10px 10px rgb(244, 238, 245);
+}
+.btn-span{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(0, 255, 0);
+    height: 400%;
+    width: 100%;
+    transform: scaleX(0) rotate(45deg);
+    transition: all 1s cubic-bezier(0.88, 0.38, 0, 0.93);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.submit{
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(38, 192, 97);
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
